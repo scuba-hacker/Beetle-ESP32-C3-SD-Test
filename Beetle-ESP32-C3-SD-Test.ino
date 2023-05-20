@@ -1,3 +1,12 @@
+// Mark B. Jones - Scuba Hacker! - 20 May 2023 - MIT Licence
+// Test the Adafruit SPI Flash SD Card - XTSD 512MB with the Beetle ESP32-C3 dev board
+// https://www.dfrobot.com/product-2566.html
+// https://learn.adafruit.com/adafruit-spi-flash-sd-card
+// https://randomnerdtutorials.com/esp32-microsd-card-arduino/
+
+// The only change from the Arduino SD sample for ESP32 was to set the Clock Select pin to 2 in the line SD.begin(SD_CHIP_SELECT_PIN)
+// I also made all the success/fail error messages include the name of the directory or file being manipulated
+
 /*
  * Connect the SD card to the following pins:
  *
